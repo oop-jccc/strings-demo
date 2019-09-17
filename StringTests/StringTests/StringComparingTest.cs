@@ -33,9 +33,7 @@ namespace StringTests
         public void EqualsIgnoreCaseTest()
         {
             Assert.IsTrue("hello world".ToUpper().Equals("Hello World".ToUpper()));
-            Assert.IsTrue("hello world".Equals("Hello World",
-                StringComparison.InvariantCultureIgnoreCase));
-
+            Assert.IsTrue("hello world".Equals("Hello World", StringComparison.InvariantCultureIgnoreCase));
             Assert.IsTrue(" hello world   ".ToUpper().Trim().Equals("Hello World".ToUpper()));
         }
 

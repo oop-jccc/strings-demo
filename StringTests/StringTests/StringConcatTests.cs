@@ -10,11 +10,12 @@ public class StringConcatTests
     // Spans:
     // - Introduced in .NET Core 2.1 and available in .NET Standard 2.1 and later.
     // - Span<T> is a stack-only type that provides memory-safe, efficient access to contiguous memory regions.
-    // - Utilized extensively in modern .NET for high-performance string operations, including:
-    //     - String.Concat
-    //     - String.Format
-    //     - String Interpolation
-    //     - DefaultInterpolatedStringHandler and other string handlers
+    // - Utilized extensively in modern .NET for high-performance operations across various domains, including:
+    //     - String manipulation (e.g., String.Concat, String.Format, String Interpolation, DefaultInterpolatedStringHandler)
+    //     - Memory and buffer management (e.g., processing arrays, streams, and I/O operations)
+    //     - Parsing and serialization tasks
+    //     - Interoperability with unmanaged code
+    //     - Implementing high-performance algorithms and data structures
     // - Allows manipulation of memory slices without heap allocations, reducing garbage collection pressure.
     // - Enhances performance by enabling low-level memory operations, such as directly writing characters to a buffer.
 

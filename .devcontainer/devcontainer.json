@@ -1,8 +1,8 @@
-﻿{
+{
   "name": ".NET High-Performance Environment",
   "image": "mcr.microsoft.com/devcontainers/dotnet:8.0",
   "hostRequirements": {
-    "cpus": 8,
+    "cpus": 4,
     "memory": "16gb"
   },
   "customizations": {
@@ -23,6 +23,6 @@
     }
   },
   "forwardPorts": [],
-  "postCreateCommand": "dotnet restore StringTests/StringTests/StringTests.csproj",
+  "postCreateCommand": "dotnet restore StringTests/StringTests.sln",
   "remoteUser": "vscode"
 }
